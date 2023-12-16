@@ -190,11 +190,16 @@ require('lazy').setup({
   },
 
   {
-    -- Theme tokyonight
+    -- Toky Night theme
     "folke/tokyonight.nvim",
     lazy = false,
     priority = 1000,
-    opts = {},
+    opts = {
+      style = "storm"
+    },
+    config = function()
+      vim.cmd([[colorscheme tokyonight]])
+    end,
   },
 
   {
