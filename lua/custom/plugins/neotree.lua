@@ -280,6 +280,6 @@ return {
       }
     }
     -- set keymaps
-    vim.keymap.set("n", "<leader>ee", "<cmd>Neotree toggle<CR>", { desc = "Toggle file explorer" }) -- toggle file explorer
+    vim.keymap.set("n", "<leader>E", "<cmd>Neotree toggle<CR>", { desc = "Toggle file [E]xplorer" }) -- toggle file explorer
   end,
 }
