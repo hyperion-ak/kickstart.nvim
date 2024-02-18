@@ -44,15 +44,8 @@ P.S. You can delete this when you're done too. It's your config now :)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-
--- Disable netrw plugin
-vim.g.loaded_netrw =  1
-vim.g.loaded_netrwPlugin =  1
-vim.g.netrw_banner =  0
-vim.g.netrw_liststyle =  3
-vim.g.netrw_browse_split =  4
-vim.g.netrw_altv =  1
-vim.g.netrw_winsize =  25
+-- Disbale netrw
+require 'custom.netrw'
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    https://github.com/folke/lazy.nvim
@@ -293,6 +286,10 @@ require('lazy').setup({
   --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
   { import = 'custom.plugins' },
 }, {})
+
+-- Import additional configuration files
+require 'custom.options'
+require 'custom.keymaps'
 
 -- [[ Setting options ]]
 -- See `:help vim.o`
