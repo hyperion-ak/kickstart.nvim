@@ -28,7 +28,7 @@ return {
         treesitter = true,
       }
       -- set keymaps
-      vim.keymap.set("n", "<leader>Z", "<cmd>ZenMode<CR>", { desc = "[Z]enMode" }) -- toggle zen mode 
+      vim.keymap.set("n", "<leader>tz", "<cmd>ZenMode<CR>", { desc = "[T]oggle [Z]enMode" }) -- toggle zen mode 
     end,
   },
 
